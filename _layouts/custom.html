@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <style>
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<div class="navbar">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+</div>
+
+<div class="custom" style="background-color: black; color: white;">
+    {{ content }}
+</div>
