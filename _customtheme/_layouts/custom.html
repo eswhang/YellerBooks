@@ -1,27 +1,22 @@
----
-layout: default
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-    <style>
-        .navbar {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background-color: black;
-            color: white;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
 </head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
 
-<div class="navbar">
-    <button>Button 1</button>
-    <button>Button 2</button>
-    <button>Button 3</button>
-</div>
-
-<div class="custom" style="background-color: black; color: white;">
+    <!-- Page Content -->
     {{ content }}
-</div>
+</body>
+</html>
